@@ -51,12 +51,12 @@ const days = ["Monday", "Tuesday", "Wednesday"]
 days.shift() // returns the removed element, in this case "Monday"
 days // ["Tuesday", "Wednesday"]
 
-// problem 1
+// problem ok
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
 }
-// problem 2
+// problem ok
 function destructivelyRemoveElementFromEndOfArray(array) {
   array.pop()
   return array;
@@ -73,8 +73,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 // problem 3
 function removeElementFromEndOfArray(array) {
-  array.slice(-1)
-  return array;
+  return array.slice(-1)
 }
 var iceCreams = ["chocolate", "vanilla", "raspberry"]
 iceCreams.pop() // returns the removed element, in this case "raspberry"
