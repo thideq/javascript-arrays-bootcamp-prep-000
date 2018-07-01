@@ -51,7 +51,7 @@ const days = ["Monday", "Tuesday", "Wednesday"]
 days.shift() // returns the removed element, in this case "Monday"
 days // ["Tuesday", "Wednesday"]
 
-// problem
+// problem 1
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
