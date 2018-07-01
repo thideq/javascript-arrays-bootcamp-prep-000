@@ -55,7 +55,9 @@ days // ["Tuesday", "Wednesday"]
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   return [array.shift(), ...array]
 }
-
+function destructivelyRemoveElementFromEndOfArray(array) {
+  return [...array.slice(-1), array.pop()]
+}
 catsList = ["Milo", "Garfield", "Otis"];
 catslist.slice(1) // ["Garfield", "Otis"];
 // get the last 1 cat
@@ -72,6 +74,4 @@ var iceCreams = ["chocolate", "vanilla", "raspberry"]
 iceCreams.pop() // returns the removed element, in this case "raspberry"
 iceCreams // ["chocolate", "vanilla"]
 
-function destructivelyRemoveElementFromEndOfArray(array) {
-  return [...array.slice(-1), array.pop()]
-}
+
