@@ -58,7 +58,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 // problem 2
 function destructivelyRemoveElementFromEndOfArray(array) {
-  array.slice(-1)
+  array.shift()
   return array
 //  return [...array.slice(-1), array.pop()]
 }
