@@ -56,9 +56,10 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
 }
+// problem 2
 function destructivelyRemoveElementFromEndOfArray(array) {
-  array.slice(-1)
-  return [...array.slice(-1), array.pop()]
+  return array.slice(-1)
+//  return [...array.slice(-1), array.pop()]
 }
 catsList = ["Milo", "Garfield", "Otis"];
 catslist.slice(1) // ["Garfield", "Otis"];
@@ -69,6 +70,7 @@ catslist // ["Milo", "Garfield", "Otis"];
 function removeElementFromBeginningOfArray(array) {
   return array.slice(1);
 }
+// problem 3
 function removeElementFromEndOfArray(array) {
   return array.slice(-1);
 }
