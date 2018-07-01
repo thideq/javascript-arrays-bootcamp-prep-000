@@ -73,7 +73,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 // problem 3
 function removeElementFromEndOfArray(array) {
-  return array.slice(-1)
+  return array.slice(0, array.length - 1)
 }
 var iceCreams = ["chocolate", "vanilla", "raspberry"]
 iceCreams.pop() // returns the removed element, in this case "raspberry"
