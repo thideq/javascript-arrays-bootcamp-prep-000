@@ -53,7 +53,8 @@ days // ["Tuesday", "Wednesday"]
 
 // problem
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  return [array.shift(), ...array]
+  array.shift();
+  return array;
 }
 function destructivelyRemoveElementFromEndOfArray(array) {
   return [...array.slice(-1), array.pop()]
